@@ -8,8 +8,7 @@ package examples.shapes;
  */
 public interface IGetVertices {
     /**
-     *
      * @return array of the vertices of a Shape.
      */
-    Point[] getVertices();
+    Point[] getVertices() throws ShapeException;
 }

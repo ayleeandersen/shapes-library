@@ -16,8 +16,8 @@ public class Ellipse extends TwoDShape {
      * Constructor with a Point for center
      *
      * @param center The location of the center of the Ellipse -- must be a valid point.
-     * @param height The height of the Ellipse -- must be greater or equal to zero.
-     * @param width  The width of the Ellipse -- must be greater or equal to zero.
+     * @param height The height of the Ellipse -- must be greater thank zero.
+     * @param width  The width of the Ellipse -- must be greater than zero.
      * @throws ShapeException The exception thrown if the center, height, or width are not valid.
      */
     public Ellipse(Point center, double height, double width) throws ShapeException {

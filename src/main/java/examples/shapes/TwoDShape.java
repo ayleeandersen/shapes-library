@@ -16,5 +16,6 @@ public abstract class TwoDShape extends Shape {
      * @return area of the shape
      */
     abstract double getArea();
+    // TODO: do I have to add comments for this implementation
     abstract void move(double x, double y) throws ShapeException;
 }

@@ -12,7 +12,7 @@ public class Circle extends Ellipse {
      * Constructor with x-y Location for center
      *
      * @param x                 The x-location of the center of the circle -- must be a valid double
-     * @param y                 The y-location of the center of the circle
+     * @param y                 The y-location of the center of the circle -- must be a valid double
      * @param radius            The radius of the circle -- must be greater or equal to zero.
      * @throws ShapeException   The exception thrown if the x, y, or radius are not valid
      */
