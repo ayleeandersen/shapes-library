@@ -11,4 +11,14 @@ public class Validator {
         if (value<0)
             throw new ShapeException(errorMessage);
     }
+
+    public static void validatePoint(Point point, String errorMessage) throws ShapeException {
+        if (point == null)
+            throw new ShapeException(errorMessage);
+    }
+
+    public static void validateLineLength(double length, String errorMessage) throws ShapeException {
+        if (length < 0.00000001)
+            throw new ShapeException(errorMessage);
+    }
 }

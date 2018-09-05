@@ -8,8 +8,7 @@ package examples.shapes;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Line {
-
+public class Line extends Shape implements IGetVertices {
     private Point point1;
     private Point point2;
 
@@ -21,12 +20,11 @@ public class Line {
      * @param y2                The y-location of second point -- must be a valid double.
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    public Line(double x1, double y1, double x2, double y2) throws ShapeException {
+    public Line(double x1, double y1, double x2, double y2) throws ShapeException { // TODO: does this actually have to throw ShapeException
         point1 = new Point(x1, y1);
         point2 = new Point(x2, y2);
 
-        if (computeLength() < 0.00000001)
-            throw new ShapeException("A line must have a length > 0");
+        Validator.validateLineLength(getLength(), "A line must have a length > 0");
     }
 
     /**
@@ -35,26 +33,21 @@ public class Line {
      * @param point2            The second point -- must not b e null
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    public Line(Point point1, Point point2) throws ShapeException {
-        if (point1==null || point2==null)
-            throw new ShapeException("Invalid Point");
+    public Line(Point point1, Point point2) throws ShapeException { // TODO: does this actually have to throw ShapeException
+        Validator.validatePoint(point1, "Invalid Point");
+        Validator.validatePoint(point2, "Invalid Point");
 
         this.point1 = point1;
         this.point2 = point2;
 
-        if (computeLength() < 0.00000001)
-            throw new ShapeException("A line must have a length > 0");
+        Validator.validateLineLength(getLength(), "A line must have a length > 0");
     }
 
-    /**
-     * @return  The first point
-     */
-    public Point getPoint1() { return point1; }
-
-    /**
-     * @return  The second point
-     */
-    public Point getPoint2() { return point2; }
+    // TODO: Do I have to comment?
+    public Point[] getVertices() {
+        Point[] vertices = {point1, point2};
+        return vertices;
+    }
 
     /**
      * Move a line
@@ -63,7 +56,11 @@ public class Line {
      * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    public void move(double deltaX, double deltaY) throws ShapeException {
+    // TODO: Do I have to comment?
+    public void move(double deltaX, double deltaY) throws ShapeException { // TODO: does this actually have to throw ShapeException
+        Validator.validateDouble(deltaX, "Invalid delta-x value");
+        Validator.validateDouble(deltaY, "Invalid delta-y value");
+
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
     }
@@ -71,7 +68,7 @@ public class Line {
     /**
      * @return  The length of the line
      */
-    public double computeLength() {
+    public double getLength() {
         return Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2) +
                          Math.pow(point2.getY() - point1.getY(), 2));
     }
@@ -79,7 +76,7 @@ public class Line {
     /**
      * @return  The slope of the line
      */
-    public double computeSlope() {
+    public double getSlope() {
         return (point2.getX() - point1.getX())/(point2.getY() - point1.getY());
     }
 }

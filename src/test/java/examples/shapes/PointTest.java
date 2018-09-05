@@ -220,7 +220,7 @@ public class PointTest {
         assertEquals(-123.45, p1.getX(), 0);
         assertEquals(-23.45, p1.getY(), 0);
 
-        Point p2 = p1.copy();
+        Point p2 = p1.duplicate();
         assertNotSame(p1, p2);
         assertEquals(p1.getX(), p2.getX(), 0);
         assertEquals(p1.getY(), p2.getY(), 0);
