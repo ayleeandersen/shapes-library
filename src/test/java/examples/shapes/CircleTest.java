@@ -188,54 +188,15 @@ public class CircleTest {
     }
 
     @Test
-    public void testScale() throws ShapeException {
-        Circle myCircle = new Circle(1, 2, 5);
-        assertEquals(1, myCircle.getCenter().getX(), 0);
-        assertEquals(2, myCircle.getCenter().getY(), 0);
-        assertEquals(5, myCircle.getRadius(), 0);
-
-        myCircle.scale(3);
-        assertEquals(1, myCircle.getCenter().getX(), 0);
-        assertEquals(2, myCircle.getCenter().getY(), 0);
-        assertEquals(15, myCircle.getRadius(), 0);
-
-        myCircle.scale(0.2);
-        assertEquals(1, myCircle.getCenter().getX(), 0);
-        assertEquals(2, myCircle.getCenter().getY(), 0);
-        assertEquals(3, myCircle.getRadius(), 0);
-
-        try {
-            myCircle.scale(Double.POSITIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            myCircle.scale(Double.NEGATIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            myCircle.scale(Double.NaN);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-    }
-
-    @Test
     public void testComputeArea() throws ShapeException {
         Circle myCircle = new Circle(1, 2, 5);
-        assertEquals(78.53975, myCircle.computeArea(), 0.0001);
+        assertEquals(78.53975, myCircle.getArea(), 0.0001);
 
         myCircle = new Circle(1, 2, 4.234);
-        assertEquals(56.3185174, myCircle.computeArea(), 0.0001);
+        assertEquals(56.3185174, myCircle.getArea(), 0.0001);
 
         myCircle = new Circle(1, 2, 0);
-        assertEquals(0, myCircle.computeArea(), 0);
+        assertEquals(0, myCircle.getArea(), 0);
 
     }
 

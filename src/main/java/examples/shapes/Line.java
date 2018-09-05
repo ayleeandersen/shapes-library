@@ -20,7 +20,8 @@ public class Line extends Shape implements IGetVertices {
      * @param y2                The y-location of second point -- must be a valid double.
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    public Line(double x1, double y1, double x2, double y2) throws ShapeException { // TODO: does this actually have to throw ShapeException
+    public Line(double x1, double y1, double x2, double y2) throws ShapeException {
+        // TODO: can I get rid of this constructor?
         point1 = new Point(x1, y1);
         point2 = new Point(x2, y2);
 
@@ -28,12 +29,12 @@ public class Line extends Shape implements IGetVertices {
     }
 
     /**
-     *
+     * Constructor based on two points
      * @param point1            The first point -- must not be null
      * @param point2            The second point -- must not b e null
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    public Line(Point point1, Point point2) throws ShapeException { // TODO: does this actually have to throw ShapeException
+    public Line(Point point1, Point point2) throws ShapeException {
         Validator.validatePoint(point1, "Invalid Point");
         Validator.validatePoint(point2, "Invalid Point");
 
@@ -43,7 +44,7 @@ public class Line extends Shape implements IGetVertices {
         Validator.validateLineLength(getLength(), "A line must have a length > 0");
     }
 
-    // TODO: Do I have to comment?
+    // TODO: Do I have to comment this implementation?
     public Point[] getVertices() {
         Point[] vertices = {point1, point2};
         return vertices;
@@ -56,8 +57,9 @@ public class Line extends Shape implements IGetVertices {
      * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    // TODO: Do I have to comment?
-    public void move(double deltaX, double deltaY) throws ShapeException { // TODO: does this actually have to throw ShapeException
+    // TODO: Do I have to comment this implementation?
+    public void move(double deltaX, double deltaY) throws ShapeException {
+        // TODO: do I have to have this validation since point.move has validation?
         Validator.validateDouble(deltaX, "Invalid delta-x value");
         Validator.validateDouble(deltaY, "Invalid delta-y value");
 
