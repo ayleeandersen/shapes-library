@@ -22,8 +22,8 @@ public class Ellipse extends TwoDShape {
      */
     public Ellipse(Point center, double height, double width) throws ShapeException {
         Validator.validatePoint(center, "Must have a valid center point");
-        Validator.validatePositiveDouble(height, "Must have a positive height");
-        Validator.validatePositiveDouble(width, "Must have a positive width");
+        Validator.validateLineLength(height, "Must have a positive height");
+        Validator.validateLineLength(width, "Must have a positive width");
 
         this.center = center;
         this.height = height;
@@ -36,20 +36,29 @@ public class Ellipse extends TwoDShape {
     public Point[] getFoci() throws ShapeException {
         double a = height / 2;
         double b = width / 2;
-        double distanceToFoci = -Math.sqrt(Math.abs(a*a - b*b));
-        Point[] foci = {};
+        double distanceToFoci = Math.sqrt(Math.abs(a*a - b*b));
+        Point[] foci = new Point[2];
         foci[0] = new Point(center.getX() - distanceToFoci, center.getY());
         foci[1] = new Point(center.getX() + distanceToFoci, center.getY());
         return foci;
     }
 
-    // TODO: do I have to comment this implementation?
+    /**
+     * Move an Ellipse
+     *
+     * @param deltaX            The delta x-location by which the line should be moved -- must be a valid double
+     * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
+     * @throws ShapeException   Exception throw if any parameter is invalid
+     */
     public void move(double deltaX, double deltaY) throws ShapeException {
-        // TODO: do I have to have validation here since point.move has validation?
         center.move(deltaX, deltaY);
     }
 
-    // TODO: do I have to comment this implementation?
+    /**
+     * Gets the area of the shape.
+     *
+     * @return area of the shape
+     */
     public double getArea() {
         return Math.PI * (height/2) * (width/2);
     }

@@ -16,6 +16,14 @@ public abstract class TwoDShape extends Shape {
      * @return area of the shape
      */
     abstract double getArea();
-    // TODO: do I have to add comments for this implementation
+
+    /**
+     * Abstract move method for each of the children TwoDShapes to implement.
+     * Moves the Shape along the x and/or y axes.
+     *
+     * @param x The distance the shape should move along the x-axis
+     * @param y The distance the shape should move along the y-axis
+     * @throws ShapeException Exception throw if any parameter is invalid
+     */
     abstract void move(double x, double y) throws ShapeException;
 }

@@ -22,31 +22,43 @@ public class Rectangle extends TwoDShape implements IGetVertices {
      */
     public Rectangle(Point topLeftVertex, double height, double width) throws ShapeException {
         Validator.validatePoint(topLeftVertex, "Must have a valid top, left vertex");
-        Validator.validatePositiveDouble(height, "Must have a positive height");
-        Validator.validatePositiveDouble(width, "Must have a positive width");
+        Validator.validateLineLength(height, "Must have a positive height");
+        Validator.validateLineLength(width, "Must have a positive width");
 
         this.topLeftVertex = topLeftVertex;
         this.height = height;
         this.width = width;
     }
 
-    // TODO: do I have to comment this implementation?
+    /**
+     * @return vertices of the Rectangle
+     */
     public Point[] getVertices() throws ShapeException {
-        Point[] vertices = {topLeftVertex};
+        Point[] vertices = new Point[4];
+        vertices[0] = topLeftVertex;
         vertices[1] = new Point(topLeftVertex.getX() + width, topLeftVertex.getY());
         vertices[2] = new Point(topLeftVertex.getX(), topLeftVertex.getY() + height);
         vertices[3] = new Point(topLeftVertex.getX() + width, topLeftVertex.getY() + height);
         return vertices;
     }
 
-    // TODO: do I have to comment this implementation?
+    /**
+     * Moves a Rectangle
+     *
+     * @param deltaX            The delta x-location by which the line should be moved -- must be a valid double
+     * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
+     * @throws ShapeException   Exception throw if any parameter is invalid
+     */
     public void move(double deltaX, double deltaY) throws ShapeException {
-        // TODO: do I have to have validation here since point.move has validation?
         // TODO: do I have to move more than one vertex? USE testing to figure out.
         topLeftVertex.move(deltaX, deltaY);
     }
 
-    // TODO: do I have to comment this implementation?
+    /**
+     * Gets the area of the shape.
+     *
+     * @return area of the shape
+     */
     public double getArea() {
         return height * width;
     }

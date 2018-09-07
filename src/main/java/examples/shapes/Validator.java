@@ -18,7 +18,14 @@ public class Validator {
     }
 
     public static void validateLineLength(double length, String errorMessage) throws ShapeException {
+        validateDouble(length, errorMessage);
         if (length < 0.00000001)
             throw new ShapeException(errorMessage);
+    }
+
+    public static void validateTriangle(Line line1, Line line2, Line line3, String errorMessage) throws ShapeException {
+        if (line1.getSlope() == line2.getSlope() || line1.getSlope() == line3.getSlope() || line2.getSlope() == line3.getSlope()) {
+            throw new ShapeException(errorMessage);
+        }
     }
 }

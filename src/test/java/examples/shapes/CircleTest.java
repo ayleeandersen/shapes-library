@@ -30,6 +30,13 @@ public class CircleTest {
         }
 
         try {
+            new Circle(new Point(1, 2), 0);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            // ignore
+        }
+
+        try {
             new Circle( new Point(1, 2), Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
         } catch (Exception e) {
@@ -91,29 +98,6 @@ public class CircleTest {
         } catch (Exception e) {
             // ignore
         }
-
-
-        try {
-            new Circle(1, 2, Double.POSITIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            new Circle(1, 2, Double.NEGATIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            new Circle(1, 2, Double.NaN);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
     }
 
     @Test
@@ -139,6 +123,11 @@ public class CircleTest {
         assertEquals(5, myCircle.getRadius(), 0);
 
         myCircle.move(-12,  -26);
+        assertEquals(-8, myCircle.getCenter().getX(), 0);
+        assertEquals(-20, myCircle.getCenter().getY(), 0);
+        assertEquals(5, myCircle.getRadius(), 0);
+
+        myCircle.move(0,  0);
         assertEquals(-8, myCircle.getCenter().getX(), 0);
         assertEquals(-20, myCircle.getCenter().getY(), 0);
         assertEquals(5, myCircle.getRadius(), 0);
@@ -194,10 +183,20 @@ public class CircleTest {
 
         myCircle = new Circle(1, 2, 4.234);
         assertEquals(56.3185174, myCircle.getArea(), 0.0001);
-
-        myCircle = new Circle(1, 2, 0);
-        assertEquals(0, myCircle.getArea(), 0);
-
     }
 
+    @Test
+    public void testGetFoci() throws ShapeException {
+        Circle myCircle = new Circle(1, 2, 5);
+        assertEquals(1, myCircle.getFoci()[0].getX(), 0.0001);
+        assertEquals(2, myCircle.getFoci()[0].getY(), 0.0001);
+        assertEquals(1, myCircle.getFoci()[1].getX(), 0.0001);
+        assertEquals(2, myCircle.getFoci()[1].getY(), 0.0001);
+
+        myCircle = new Circle(-1, 2, 2);
+        assertEquals(-1, myCircle.getFoci()[0].getX(), 0.0001);
+        assertEquals(2, myCircle.getFoci()[0].getY(), 0.0001);
+        assertEquals(-1, myCircle.getFoci()[1].getX(), 0.0001);
+        assertEquals(2, myCircle.getFoci()[1].getY(), 0.0001);
+    }
 }

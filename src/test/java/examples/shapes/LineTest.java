@@ -82,6 +82,78 @@ public class LineTest {
         }
 
         try {
+            new Line(Double.NEGATIVE_INFINITY, 2, 3, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid x-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, Double.NEGATIVE_INFINITY, 3, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid y-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, 2, Double.NEGATIVE_INFINITY, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid x-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, 2, 3, Double.NEGATIVE_INFINITY);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid y-location", e.getMessage());
+        }
+
+        try {
+            new Line(Double.NaN, 2, 3, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid x-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, Double.NaN, 3, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid y-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, 2, Double.NaN, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid x-location", e.getMessage());
+        }
+
+        try {
+            new Line(1, 2, 3, Double.NaN);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("Invalid y-location", e.getMessage());
+        }
+
+        try {
+            new Line(3, 4, 3, 4);
+            fail("Expected exception not thrown");
+        } catch (Exception e) {
+            assertEquals(ShapeException.class, e.getClass());
+            assertEquals("A line must have a length > 0", e.getMessage());
+        }
+
+        try {
             new Line(p1, p1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
@@ -123,7 +195,6 @@ public class LineTest {
 
     @Test
     public void testComputeLength() throws ShapeException {
-
         Line myLine = new Line(1, 2, 4, 10);
         assertEquals(8.544, myLine.getLength(), 0.001);
 
@@ -152,4 +223,18 @@ public class LineTest {
         assertEquals(Double.NEGATIVE_INFINITY, myLine.getSlope(), 0.1);
     }
 
+    @Test
+    public void testGetVertices() throws ShapeException {
+        Line myLine = new Line(2, 2, 4, 10);
+        assertEquals(2, myLine.getVertices()[0].getX(), 0.1);
+        assertEquals(2, myLine.getVertices()[0].getY(), 0.1);
+        assertEquals(4, myLine.getVertices()[1].getX(), 0.1);
+        assertEquals(10, myLine.getVertices()[1].getY(), 0.1);
+
+        myLine = new Line(new Point(2, 3), new Point(-4, 10));
+        assertEquals(2, myLine.getVertices()[0].getX(), 0.1);
+        assertEquals(3, myLine.getVertices()[0].getY(), 0.1);
+        assertEquals(-4, myLine.getVertices()[1].getX(), 0.1);
+        assertEquals(10, myLine.getVertices()[1].getY(), 0.1);
+    }
 }

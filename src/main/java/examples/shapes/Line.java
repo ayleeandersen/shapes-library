@@ -44,7 +44,9 @@ public class Line extends Shape implements IGetVertices {
         Validator.validateLineLength(getLength(), "A line must have a length > 0");
     }
 
-    // TODO: Do I have to comment this implementation?
+    /**
+     * @return endpoints of a line
+     */
     public Point[] getVertices() {
         Point[] vertices = {point1, point2};
         return vertices;
@@ -57,7 +59,6 @@ public class Line extends Shape implements IGetVertices {
      * @param deltaY            The delta y-location by which the line should be moved -- must be a valid double
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
-    // TODO: Do I have to comment this implementation?
     public void move(double deltaX, double deltaY) throws ShapeException {
         // TODO: do I have to have this validation since point.move has validation?
         Validator.validateDouble(deltaX, "Invalid delta-x value");

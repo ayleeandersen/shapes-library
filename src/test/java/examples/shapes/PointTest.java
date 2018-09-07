@@ -65,92 +65,6 @@ public class PointTest {
     }
 
     @Test
-    public void testMoveX() throws Exception {
-        Point p1 = new Point(1,2);
-
-        p1.moveX(10);
-        assertEquals(11, p1.getX(), 0);
-        assertEquals(2, p1.getY(), 0);
-
-        p1.moveX(0.1234);
-        assertEquals(11.1234, p1.getX(), 0);
-        assertEquals(2, p1.getY(), 0);
-
-        p1.moveX(-20);
-        assertEquals(-8.8766, p1.getX(), 0);
-        assertEquals(2, p1.getY(), 0);
-
-        p1.moveX(0);
-        assertEquals(-8.8766, p1.getX(), 0);
-        assertEquals(2, p1.getY(), 0);
-
-        try {
-            p1.moveX(Double.POSITIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            p1.moveX(Double.NEGATIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            p1.moveX(Double.NaN);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-    }
-
-    @Test
-    public void testMoveY() throws Exception {
-        Point p1 = new Point(1,2);
-
-        p1.moveY(10);
-        assertEquals(1, p1.getX(), 0);
-        assertEquals(12, p1.getY(), 0);
-
-        p1.moveY(0.1234);
-        assertEquals(1, p1.getX(), 0);
-        assertEquals(12.1234, p1.getY(), 0);
-
-        p1.moveY(-20);
-        assertEquals(1, p1.getX(), 0);
-        assertEquals(-7.8766, p1.getY(), 0);
-
-        p1.moveY(0);
-        assertEquals(1, p1.getX(), 0);
-        assertEquals(-7.8766, p1.getY(), 0);
-
-        try {
-            p1.moveY(Double.POSITIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            p1.moveY(Double.NEGATIVE_INFINITY);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-        try {
-            p1.moveY(Double.NaN);
-            fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
-        }
-
-    }
-
-    @Test
     public void testMove() throws Exception {
         Point p1 = new Point(1,2);
 
@@ -169,6 +83,14 @@ public class PointTest {
         p1.move(-20, -30);
         assertEquals(-9, p1.getX(), 0);
         assertEquals(-8, p1.getY(), 0);
+
+        p1.move(-2, 0);
+        assertEquals(-11, p1.getX(), 0);
+        assertEquals(-8, p1.getY(), 0);
+
+        p1.move(0, -3);
+        assertEquals(-11, p1.getX(), 0);
+        assertEquals(-11, p1.getY(), 0);
 
         try {
             p1.move(1, Double.POSITIVE_INFINITY);
