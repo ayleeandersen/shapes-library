@@ -24,42 +24,42 @@ public class PointTest {
             new Point(1,Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid y-location", e.getMessage());
         }
 
         try {
             new Point(1,Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid y-location", e.getMessage());
         }
 
         try {
             new Point(1,Double.NaN);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid y-location", e.getMessage());
         }
 
         try {
             new Point(Double.POSITIVE_INFINITY, 1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
         try {
             new Point(Double.NEGATIVE_INFINITY, 1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
         try {
             new Point(Double.NaN, 1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
     }
@@ -96,42 +96,42 @@ public class PointTest {
             p1.move(1, Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             p1.move(1, Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             p1.move(1, Double.NaN);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             p1.move(Double.POSITIVE_INFINITY, 1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             p1.move(Double.NEGATIVE_INFINITY,1 );
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             p1.move(Double.NaN,1);
             fail("Expected exception not thrown");
         } catch (Exception e) {
-            // ignore
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
     }

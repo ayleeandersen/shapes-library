@@ -75,6 +75,6 @@ public class Line extends Shape implements IGetVertices {
      * @return  The slope of the line
      */
     public double getSlope() {
-        return (point2.getX() - point1.getX())/(point2.getY() - point1.getY());
+        return (point2.getY() - point1.getY())/(point2.getX() - point1.getX());
     }
 }

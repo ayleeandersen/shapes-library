@@ -21,7 +21,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -407,21 +407,21 @@
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Square.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Circle.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Ellipse.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/CircleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/LineTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/RectangleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/EllipseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/SquareTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Point.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/PointTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/TriangleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Triangle.java" />
         <option value="$PROJECT_DIR$/src/test/java/examples/shapes/ValidatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Line.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Shape.java" />
         <option value="$PROJECT_DIR$/src/main/java/examples/shapes/TwoDShape.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/shapes/Line.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/PointTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/LineTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/CircleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/EllipseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/RectangleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/SquareTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/examples/shapes/TriangleTest.java" />
       </list>
     </option>
   </component>
@@ -432,9 +432,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="297" />
     <option name="y" value="23" />
-    <option name="width" value="993" />
-    <option name="height" value="945" />
+    <option name="width" value="1383" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -451,8 +452,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -512,7 +514,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -648,43 +649,44 @@
       <updated>1535732932781</updated>
       <workItem from="1535732935597" duration="4380000" />
       <workItem from="1536111045224" duration="32255000" />
+      <workItem from="1536357292572" duration="2283000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 19m 31s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 35m 01s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 20m 05s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 35m 49s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 24m 45s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 36m 08s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 25m 29s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 36m 31s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 26m 04s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 37m 27s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 26m 59s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 38m 49s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 30m 29s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 39m 03s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 31m 18s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 39m 24s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 20h 40m 45s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 39m 46s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.09.06 at 21h 10m 04s.xml">
+    <history-entry file="All_in_shapes_test - 2018.09.07 at 16h 40m 06s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36635000" />
+    <option name="totallyTimeSpent" value="38918000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -696,7 +698,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="993" height="945" extended-state="0" />
+    <frame x="297" y="23" width="1383" height="942" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -706,15 +708,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27024186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15137957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -727,6 +727,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -779,8 +781,8 @@
             <element signature="docComment;method#Circle#0;class#Circle#0" expanded="false" />
             <element signature="docComment;method#Circle#1;class#Circle#0" expanded="false" />
             <element signature="docComment;method#getRadius#0;class#Circle#0" expanded="false" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -789,72 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/LineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="230" column="61" lean-forward="true" selection-start-line="230" selection-start-column="61" selection-end-line="230" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/CircleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/SquareTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="100" column="61" lean-forward="true" selection-start-line="100" selection-start-column="61" selection-end-line="100" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/RectangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="85" column="63" lean-forward="true" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/ValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="137" column="59" lean-forward="true" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/PointTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/EllipseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1112">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -886,21 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/examples/shapes/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="docComment;class#Point#0" expanded="false" />
-            <element signature="docComment;method#Point#0;class#Point#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#Point#0" expanded="false" />
-            <element signature="docComment;method#duplicate#0;class#Point#0" expanded="false" />
-            <element signature="docComment;method#getX#0;class#Point#0" expanded="false" />
-            <element signature="docComment;method#getY#0;class#Point#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/examples/shapes/TwoDShape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -909,22 +830,6 @@
             <element signature="docComment;class#TwoDShape#0" expanded="false" />
             <element signature="docComment;method#getArea#0;class#TwoDShape#0" expanded="false" />
             <element signature="docComment;method#move#0;class#TwoDShape#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/examples/shapes/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Line#0" expanded="false" />
-            <element signature="docComment;method#Line#0;class#Line#0" expanded="false" />
-            <element signature="docComment;method#Line#1;class#Line#0" expanded="false" />
-            <element signature="docComment;method#getVertices#0;class#Line#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#Line#0" expanded="false" />
-            <element signature="docComment;method#getLength#0;class#Line#0" expanded="false" />
-            <element signature="docComment;method#getSlope#0;class#Line#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,8 +890,8 @@
             <element signature="docComment;method#Circle#0;class#Circle#0" expanded="false" />
             <element signature="docComment;method#Circle#1;class#Circle#0" expanded="false" />
             <element signature="docComment;method#getRadius#0;class#Circle#0" expanded="false" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,8 +915,105 @@
             <element signature="docComment;class#Square#0" expanded="false" />
             <element signature="docComment;method#Square#0;class#Square#0" expanded="false" />
             <element signature="docComment;method#getSideLength#0;class#Square#0" expanded="false" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="false" />
+            <element signature="e#896#897#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/shapes/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="docComment;class#Point#0" expanded="false" />
+            <element signature="docComment;method#Point#0;class#Point#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#Point#0" expanded="false" />
+            <element signature="docComment;method#duplicate#0;class#Point#0" expanded="false" />
+            <element signature="docComment;method#getX#0;class#Point#0" expanded="false" />
+            <element signature="docComment;method#getY#0;class#Point#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/PointTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="133" column="66" lean-forward="false" selection-start-line="133" selection-start-column="66" selection-end-line="133" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/CircleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/EllipseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="72" column="8" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/LineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1889">
+          <caret line="204" column="38" lean-forward="true" selection-start-line="204" selection-start-column="38" selection-end-line="204" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/RectangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="87" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/SquareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="60" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/ValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="137" column="59" lean-forward="true" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/examples/shapes/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="75" column="59" lean-forward="false" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/shapes/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#Line#0" expanded="false" />
+            <element signature="docComment;method#Line#0;class#Line#0" expanded="false" />
+            <element signature="docComment;method#Line#1;class#Line#0" expanded="false" />
+            <element signature="docComment;method#getVertices#0;class#Line#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#Line#0" expanded="false" />
+            <element signature="docComment;method#getLength#0;class#Line#0" expanded="false" />
+            <element signature="docComment;method#getSlope#0;class#Line#0" expanded="false" />
           </folding>
         </state>
       </provider>

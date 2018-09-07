@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class CircleTest {
 
     @Test
-    public void testValidConstruction() throws Exception {
+    public void testValidConstruction() throws ShapeException {
         Point center = new Point(1,2);
         Circle myCircle = new Circle(center, 5);
         assertSame(center, myCircle.getCenter());
@@ -25,83 +25,83 @@ public class CircleTest {
         try {
             new Circle(null, 2.5);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a valid center point", e.getMessage());
         }
 
         try {
             new Circle(new Point(1, 2), 0);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Circle( new Point(1, 2), Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Circle(new Point(1, 2), Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Circle(new Point(1, 2), Double.NaN);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Circle(Double.POSITIVE_INFINITY, 2, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
         try {
             new Circle(Double.NEGATIVE_INFINITY, 2, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
         try {
             new Circle(Double.NaN, 2, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid x-location", e.getMessage());
         }
 
         try {
             new Circle(1, Double.POSITIVE_INFINITY, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid y-location", e.getMessage());
         }
 
         try {
             new Circle(1, Double.NEGATIVE_INFINITY, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid y-location", e.getMessage());
         }
 
         try {
             new Circle(1, Double.NaN, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid y-location", e.getMessage());
         }
     }
 
     @Test
-    public void testMove() throws ShapeException {
+    public void testMove() throws Exception {
         Circle myCircle = new Circle(1, 2, 5);
         assertEquals(1, myCircle.getCenter().getX(), 0);
         assertEquals(2, myCircle.getCenter().getY(), 0);
@@ -135,43 +135,43 @@ public class CircleTest {
         try {
             myCircle.move(Double.POSITIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myCircle.move(Double.NEGATIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myCircle.move(Double.NaN, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myCircle.move(1, Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myCircle.move(1, Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myCircle.move(1, Double.NaN);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
     }

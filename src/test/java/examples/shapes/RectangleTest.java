@@ -27,71 +27,71 @@ public class RectangleTest {
         try {
             new Rectangle(null, 2.5, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a valid top, left vertex", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), 0, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Rectangle( new Point(1, 2), Double.POSITIVE_INFINITY, 5);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), Double.NEGATIVE_INFINITY, 5);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), Double.NaN, 5);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
 
         try {
             new Rectangle( new Point(1, 2), 5, Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive width", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), 5, Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive width", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), 5, Double.NaN);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive width", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), 5, 0);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive width", e.getMessage());
         }
 
         try {
             new Rectangle(new Point(1, 2), 0, 3);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have a positive height", e.getMessage());
         }
     }
 
@@ -162,43 +162,43 @@ public class RectangleTest {
         try {
             myRectangle.move(Double.POSITIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myRectangle.move(Double.NEGATIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myRectangle.move(Double.NaN, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myRectangle.move(1, Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myRectangle.move(1, Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myRectangle.move(1, Double.NaN);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
     }
 

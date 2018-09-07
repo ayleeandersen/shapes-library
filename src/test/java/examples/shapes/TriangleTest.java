@@ -23,57 +23,57 @@ public class TriangleTest {
         try {
             new Triangle(null, new Point(2.5, 3), new Point(1, 2));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have valid points", e.getMessage());
         }
 
         try {
             new Triangle(new Point(2.5, 3), null, new Point(1, 2));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have valid points", e.getMessage());
         }
 
         try {
             new Triangle(new Point(2.5, 3), new Point(1, 2), null);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Must have valid points", e.getMessage());
         }
 
         try {
             new Triangle(new Point(2.5, 3), new Point(1, 2), new Point(2.5, 3));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("A line must have a length > 0", e.getMessage());
         }
 
         try {
             new Triangle(new Point(2.5, 3), new Point(1, 2), new Point(1, 2));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("A line must have a length > 0", e.getMessage());
         }
 
         try {
             new Triangle(new Point(1, 2), new Point(2, 3), new Point(3, 4));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Three points must form a triangle", e.getMessage());
         }
 
         try {
             new Triangle(new Point(1, 2), new Point(5, 2), new Point(7, 2));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Three points must form a triangle", e.getMessage());
         }
 
         try {
             new Triangle(new Point(1, 2), new Point(2, 2), new Point(8, 2));
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Three points must form a triangle", e.getMessage());
         }
     }
 
@@ -133,43 +133,43 @@ public class TriangleTest {
         try {
             myTriangle.move(Double.POSITIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myTriangle.move(Double.NEGATIVE_INFINITY, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myTriangle.move(Double.NaN, 1);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-x value", e.getMessage());
         }
 
         try {
             myTriangle.move(1, Double.POSITIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myTriangle.move(1, Double.NEGATIVE_INFINITY);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
 
         try {
             myTriangle.move(1, Double.NaN);
             fail("Expected exception not thrown");
-        } catch (Exception e) {
-            // ignore
+        } catch (ShapeException e) {
+            assertEquals("Invalid delta-y value", e.getMessage());
         }
     }
 
