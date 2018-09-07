@@ -16,5 +16,5 @@ public abstract class Shape {
      * @param y The distance the shape should move along the y-axis
      * @throws ShapeException Exception throw if any parameter is invalid
      */
-    abstract void move(double x, double y) throws ShapeException;
+    abstract void move(double deltaX, double deltaY) throws ShapeException;
 }

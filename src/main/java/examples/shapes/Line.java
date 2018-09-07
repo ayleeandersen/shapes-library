@@ -21,7 +21,6 @@ public class Line extends Shape implements IGetVertices {
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
     public Line(double x1, double y1, double x2, double y2) throws ShapeException {
-        // TODO: can I get rid of this constructor?
         point1 = new Point(x1, y1);
         point2 = new Point(x2, y2);
 
@@ -60,10 +59,6 @@ public class Line extends Shape implements IGetVertices {
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
     public void move(double deltaX, double deltaY) throws ShapeException {
-        // TODO: do I have to have this validation since point.move has validation?
-        Validator.validateDouble(deltaX, "Invalid delta-x value");
-        Validator.validateDouble(deltaY, "Invalid delta-y value");
-
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
     }

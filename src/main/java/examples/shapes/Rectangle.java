@@ -50,7 +50,6 @@ public class Rectangle extends TwoDShape implements IGetVertices {
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
     public void move(double deltaX, double deltaY) throws ShapeException {
-        // TODO: do I have to move more than one vertex? USE testing to figure out.
         topLeftVertex.move(deltaX, deltaY);
     }
 
