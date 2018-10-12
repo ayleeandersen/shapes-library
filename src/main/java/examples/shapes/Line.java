@@ -8,7 +8,7 @@ package examples.shapes;
  *
  */
 @SuppressWarnings("WeakerAccess")
-public class Line extends Shape implements IGetVertices {
+public class Line extends SimpleShape implements IGetVertices {
     private Point point1;
     private Point point2;
 
@@ -61,6 +61,15 @@ public class Line extends Shape implements IGetVertices {
     public void move(double deltaX, double deltaY) throws ShapeException {
         point1.move(deltaX, deltaY);
         point2.move(deltaX, deltaY);
+    }
+
+    /**
+     * Get the area of a line
+     *
+     * @return area of a line (no area)
+     */
+    public double getArea() {
+        return 0.0;
     }
 
     /**

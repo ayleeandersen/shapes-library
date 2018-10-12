@@ -8,7 +8,7 @@ package examples.shapes;
  * @author Aylee Andersen
  * @version 1.0
  */
-public abstract class TwoDShape extends Shape {
+public abstract class SimpleShape extends Shape {
     /**
      * Abstract getArea method for each of the 2D Shapes to implement.
      * Gets the area of the shape.

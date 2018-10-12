@@ -137,6 +137,12 @@ public class PointTest {
     }
 
     @Test
+    public void getArea() throws Exception {
+        Point p1 = new Point(-123, 314512);
+        assertTrue(p1.getArea() == 0);
+    }
+
+    @Test
     public void testClone() throws Exception {
         Point p1 = new Point(-123.45,-23.45);
         assertEquals(-123.45, p1.getX(), 0);

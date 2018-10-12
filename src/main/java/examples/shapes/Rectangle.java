@@ -7,7 +7,7 @@ package examples.shapes;
  * @author Aylee Andersen
  * @version 1.0
  */
-public class Rectangle extends TwoDShape implements IGetVertices {
+public class Rectangle extends SimpleShape implements IGetVertices {
     private Point topLeftVertex;
     private double height;
     private double width;

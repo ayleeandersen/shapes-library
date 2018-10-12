@@ -9,11 +9,19 @@ package examples.shapes;
  */
 public abstract class Shape {
     /**
+     * Abstract getArea method for each of the 2D Shapes to implement.
+     * Gets the area of the shape.
+     *
+     * @return area of the shape
+     */
+    abstract double getArea();
+
+    /**
      * Abstract move method for each of the children Shapes to implement.
      * Moves the Shape along the x and/or y axes.
      *
-     * @param x The distance the shape should move along the x-axis
-     * @param y The distance the shape should move along the y-axis
+     * @param deltaX The distance the shape should move along the x-axis
+     * @param deltaY The distance the shape should move along the y-axis
      * @throws ShapeException Exception throw if any parameter is invalid
      */
     abstract void move(double deltaX, double deltaY) throws ShapeException;

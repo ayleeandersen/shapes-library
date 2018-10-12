@@ -40,6 +40,13 @@ public class Point extends Shape {
     }
 
     /**
+     * Get the area of a point
+     *
+     * @return area (no area)
+     */
+    public double getArea() { return 0.0; }
+
+    /**
      * Copy the point
      * @return                  A new point with same x and y locations
      * @throws ShapeException   Should never thrown because the current x and y are valid

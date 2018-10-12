@@ -177,6 +177,12 @@ public class LineTest {
     }
 
     @Test
+    public void testGetArea() throws ShapeException {
+        Line line = new Line(1,2,4,10);
+        assertTrue(0.0 == line.getArea());
+    }
+
+    @Test
     public void testComputeLength() throws ShapeException {
         Line myLine = new Line(1, 2, 4, 10);
         assertEquals(8.544, myLine.getLength(), 0.001);

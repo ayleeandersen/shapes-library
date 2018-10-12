@@ -7,7 +7,7 @@ package examples.shapes;
  * @author Aylee Andersen
  * @version 1.0
  */
-public class Triangle extends TwoDShape implements IGetVertices {
+public class Triangle extends SimpleShape implements IGetVertices {
     private Point point1;
     private Point point2;
     private Point point3;

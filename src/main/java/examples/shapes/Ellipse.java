@@ -7,7 +7,7 @@ package examples.shapes;
  * @author Aylee Andersen
  * @version 1.0
  */
-public class Ellipse extends TwoDShape {
+public class Ellipse extends SimpleShape {
     private Point center;
     private double height;
     private double width;
