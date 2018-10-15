@@ -1,5 +1,8 @@
 package shapes;
 
+import java.awt.*;
+import java.awt.Shape;
+
 /**
  * This class represents Triangle objects.
  * Users of a Triangle can also move the Triangle and get its area and vertices.
@@ -63,6 +66,13 @@ public class Triangle extends SimpleShape implements IGetVertices {
      */
     public double getArea() {
         return Math.abs((point1.getX() - point3.getX())*(point2.getY() - point1.getY()) - (point1.getX() - point2.getX())*(point3.getY() - point1.getY())) / 2;
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        int[] xPoints = {(int)point1.getX(), (int)point2.getX(), (int)point3.getX()};
+        int[] yPoints = {(int)point1.getY(), (int)point2.getY(), (int)point3.getY()};
+        Polygon triangle = new Polygon(xPoints, yPoints, 3);
+        graphics.drawPolygon(triangle);
     }
 
     /**

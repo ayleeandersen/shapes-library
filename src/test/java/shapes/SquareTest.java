@@ -1,9 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Point;
-import shapes.ShapeException;
-import shapes.Square;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -178,6 +180,25 @@ public class SquareTest {
 
         mySquare = new Square(new Point(1, 2), 1.234);
         assertEquals(1.522756, mySquare.getArea(), 0.0001);
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Square square = new Square(new Point(50, 50), 30);
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 100, 100);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(square, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderSquareToImage.png")));
+        // To check predicted results against observed results, view renderSquareToImage.png in scripts/test
+        // and see if it's centered on (65, 65) with a side length of 30.
     }
 
     @Test

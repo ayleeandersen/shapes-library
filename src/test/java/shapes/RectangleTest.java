@@ -1,9 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Point;
-import shapes.Rectangle;
-import shapes.ShapeException;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -212,6 +214,25 @@ public class RectangleTest {
 
         myRectangle = new Rectangle(new Point(1, 2), 4.234, 1.234);
         assertEquals(5.22476, myRectangle.getArea(), 0.0001);
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Rectangle rectangle = new Rectangle(new Point(50, 50), 30, 40);
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 100, 100);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(rectangle, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderRectangleToImage.png")));
+        // To check predicted results against observed results, view renderRectangleToImage.png in scripts/test
+        // and see if its top left corner is on (50, 50) with a height of 30, and width of 40.
     }
 
     @Test

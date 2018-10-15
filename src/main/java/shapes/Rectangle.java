@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  * This class represents Rectangle objects.
  * Users of a Rectangle can also move the Rectangle and get its area, vertices, height, and width.
@@ -60,6 +62,10 @@ public class Rectangle extends SimpleShape implements IGetVertices {
      */
     public double getArea() {
         return height * width;
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        graphics.drawRect((int)topLeftVertex.getX(), (int)topLeftVertex.getY(), (int)width, (int)height);
     }
 
     /**

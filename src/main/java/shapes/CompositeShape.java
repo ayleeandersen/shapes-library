@@ -1,5 +1,6 @@
 package shapes;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class CompositeShape extends Shape {
@@ -37,6 +38,12 @@ public class CompositeShape extends Shape {
             area += shape.getArea();
         }
         return area;
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        for (Shape shape : shapes) {
+            shape.render(graphics);
+        }
     }
 
     public ArrayList<Shape> getShapes() {

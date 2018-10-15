@@ -55,7 +55,7 @@ public class ShapeFactory {
                     Constructor<Square> square = Square.class.getConstructor(Point.class, double.class);
                     return square.newInstance(new Point(Double.parseDouble(messageList.get(1)), Double.parseDouble(messageList.get(2))), Double.parseDouble(messageList.get(3)));
                 default:
-                    return null;
+                    throw new ShapeException("Error parsing shape " + message);
             }
         } catch(InvocationTargetException e) {
                 throw new ShapeException(e.getTargetException().getMessage());

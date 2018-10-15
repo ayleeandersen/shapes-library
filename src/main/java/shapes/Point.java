@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  * Point
  *
@@ -45,6 +47,10 @@ public class Point extends Shape {
      * @return area (no area)
      */
     public double getArea() { return 0.0; }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        graphics.drawLine((int)getX(), (int)getY(), (int)getX(), (int)getY());
+    }
 
     /**
      * Copy the point

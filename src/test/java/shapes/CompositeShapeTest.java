@@ -1,8 +1,12 @@
 package shapes;
 
+import org.junit.Assert;
 import org.junit.Test;
-import shapes.*;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.ArrayList;
 
 import static junit.framework.TestCase.assertTrue;
@@ -21,6 +25,15 @@ public class CompositeShapeTest {
         shapes.add(new Triangle(new Point(1,1), new Point(-4, 2), new Point(-5, -8)));
         CompositeShape compositeShape1 = new CompositeShape(shapes);
         assertEquals(shapes, compositeShape1.getShapes());
+        assertEquals(105.0398, compositeShape1.getArea(),0.001);
+
+        ArrayList<Shape> shapes2 = new ArrayList<>();
+        shapes2.add(new Square(new Point(0,0),5));
+        CompositeShape compositeShape2 = new CompositeShape(shapes2);
+        assertEquals(shapes2, compositeShape2.getShapes());
+        compositeShape1.add(compositeShape2);
+        assertEquals(4, compositeShape1.getShapes().size());
+        assertEquals(130.0398, compositeShape1.getArea(), 0.001);
     }
 
     @Test
@@ -152,6 +165,29 @@ public class CompositeShapeTest {
 
         compositeShape.remove(rectangle);
         assertTrue(8 == compositeShape.getArea());
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        ArrayList<Shape> shapes = new ArrayList<Shape>();
+        shapes.add(new Rectangle(new Point(30,20),10,20));
+        shapes.add(new Circle(new Point(75, 75), 10));
+        shapes.add(new Triangle(new Point(10,10), new Point(65, 20), new Point(30, 65)));
+        CompositeShape compositeShape1 = new CompositeShape(shapes);
+
+        BufferedImage bufferedImage = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 100, 100);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(compositeShape1, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        Assert.assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderCompositeShapeToImage.png")));
+        // To check predicted results against observed results, view renderCompositeShapeToImage.png in scripts/test
+        // and see if it contains a Rectangle, a Triangle, and  circle.
     }
 
     @Test

@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  * This class acts as a parent for all of the different shapes (Points and Lines included).
  * Also includes a move method for each child class to implement.
@@ -25,4 +27,6 @@ public abstract class Shape {
      * @throws ShapeException Exception throw if any parameter is invalid
      */
     abstract void move(double deltaX, double deltaY) throws ShapeException;
+
+    abstract void render(Graphics2D graphics) throws ShapeException;
 }

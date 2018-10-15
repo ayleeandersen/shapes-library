@@ -1,10 +1,6 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Line;
-import shapes.Point;
-import shapes.ShapeException;
-import shapes.Validator;
 
 import static org.junit.Assert.*;
 

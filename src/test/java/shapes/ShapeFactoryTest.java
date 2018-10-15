@@ -199,6 +199,11 @@ public class ShapeFactoryTest {
         }
 
         script = "Oval,0,5,20,30";
-        assertEquals(null, ShapeFactory.createShapeType(script));
+        try {
+            Shape shape = ShapeFactory.createShapeType(script);
+            fail("Should have thrown exception");
+        } catch (ShapeException e) {
+            assertEquals("Error parsing shape Oval,0,5,20,30", e.getMessage());
+        }
     }
 }

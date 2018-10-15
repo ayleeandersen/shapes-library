@@ -1,9 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Point;
-import shapes.ShapeException;
-import shapes.Triangle;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -189,6 +191,25 @@ public class TriangleTest {
         pt3 = new Point(-10, -3);
         myTriangle = new Triangle(pt1, pt2, pt3);
         assertEquals(57.5, myTriangle.getArea(), 0.0001);
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Triangle triangle = new Triangle(new Point(5, 5), new Point(45, 10), new Point(20, 25));
+
+        BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 50, 50);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(triangle, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderTriangleToImage.png")));
+        // To check predicted results against observed results, view renderTriangleToImage.png in scripts/test
+        // as see if there are points at (25,25), (10,10), and (45,45)
     }
 
     @Test

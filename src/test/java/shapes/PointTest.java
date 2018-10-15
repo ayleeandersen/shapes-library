@@ -1,7 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Point;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -141,6 +145,25 @@ public class PointTest {
     public void getArea() throws Exception {
         Point p1 = new Point(-123, 314512);
         assertTrue(p1.getArea() == 0);
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Point point = new Point(5, 5);
+
+        BufferedImage bufferedImage = new BufferedImage(10, 10, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 10, 10);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(point, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderPointToImage.png")));
+        // To check predicted results against observed results, view renderPointToImage.png in scripts/test
+        // as see if there is a point at (5,5)
     }
 
     @Test

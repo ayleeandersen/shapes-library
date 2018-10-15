@@ -1,9 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Line;
-import shapes.Point;
-import shapes.ShapeException;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -183,6 +185,25 @@ public class LineTest {
     public void testGetArea() throws ShapeException {
         Line line = new Line(1,2,4,10);
         assertTrue(0.0 == line.getArea());
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Line line = new Line(new Point(10, 15), new Point(30, 45));
+
+        BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 50, 50);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(line, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderLineToImage.png")));
+        // To check predicted results against observed results, view renderLineToImage.png in scripts/test
+        // as see if there is a line from point (10,15) to point (30,45)
     }
 
     @Test

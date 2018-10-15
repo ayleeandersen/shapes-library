@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  * This class acts as a parent for all 2D shapes (Triangle, Circle, Ellipse, Square, and Rectangle).
  * Also includes Shape's abstract move method for each child class to implement,
@@ -21,9 +23,11 @@ public abstract class SimpleShape extends Shape {
      * Abstract move method for each of the children TwoDShapes to implement.
      * Moves the Shape along the x and/or y axes.
      *
-     * @param x The distance the shape should move along the x-axis
-     * @param y The distance the shape should move along the y-axis
+     * @param deltaX The distance the shape should move along the x-axis
+     * @param deltaY The distance the shape should move along the y-axis
      * @throws ShapeException Exception throw if any parameter is invalid
      */
     abstract void move(double deltaX, double deltaY) throws ShapeException;
+
+    abstract void render(Graphics2D graphics) throws ShapeException;
 }

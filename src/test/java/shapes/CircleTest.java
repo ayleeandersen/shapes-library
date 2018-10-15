@@ -1,9 +1,11 @@
 package shapes;
 
 import org.junit.Test;
-import shapes.Circle;
-import shapes.Point;
-import shapes.ShapeException;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 import static org.junit.Assert.*;
 
@@ -186,6 +188,25 @@ public class CircleTest {
 
         myCircle = new Circle(1, 2, 4.234);
         assertEquals(56.3185174, myCircle.getArea(), 0.0001);
+    }
+
+    @Test
+    public void testRender() throws Exception {
+        ShapeManager shapeManager = new ShapeManager();
+        Circle circle = new Circle(10, 15, 5);
+
+        BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        Graphics2D graphics = bufferedImage.createGraphics();
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, 50, 50);
+        graphics.setColor(Color.BLUE);
+
+        shapeManager.render(circle, graphics);
+
+        // Write observed results to a file so it can be manually compared
+        assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderCircleToImage.png")));
+        // To check predicted results against observed results, view renderCircleToImage.png in scripts/test
+        // as see if there is a circle centered on (10,15) and with a radius of 5.
     }
 
     @Test

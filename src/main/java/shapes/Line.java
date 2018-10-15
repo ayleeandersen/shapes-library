@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  *
  *  Line
@@ -70,6 +72,10 @@ public class Line extends SimpleShape implements IGetVertices {
      */
     public double getArea() {
         return 0.0;
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        graphics.drawLine((int)getVertices()[0].getX(), (int)getVertices()[0].getY(), (int)getVertices()[1].getX(), (int)getVertices()[1].getY());
     }
 
     /**

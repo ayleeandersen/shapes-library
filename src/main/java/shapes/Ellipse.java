@@ -1,5 +1,7 @@
 package shapes;
 
+import java.awt.*;
+
 /**
  * This class represents Ellipse objects.
  * Users of an Ellipse can also move the Ellipse and get its area, foci, center, height, width.
@@ -61,6 +63,10 @@ public class Ellipse extends SimpleShape {
      */
     public double getArea() {
         return Math.PI * (height/2) * (width/2);
+    }
+
+    public void render(Graphics2D graphics) throws ShapeException {
+        graphics.drawOval((int)center.getX(), (int)center.getY(), (int)width, (int)height);
     }
 
     /**

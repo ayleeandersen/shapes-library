@@ -2,32 +2,33 @@ package shapes;
 
 import org.apache.commons.io.IOUtils;
 
+import java.awt.*;
 import java.io.InputStream;
 import java.io.OutputStream;
 
 public class ShapeManager {
     public Shape loadFromScript(InputStream inputStream) throws Exception {
         String input = IOUtils.toString(inputStream, "UTF-8");
-        // TODO: test bad script
         return create(input);
     }
 
-    public Shape create(String message) {
+    public Shape create(String message) throws Exception {
+        return ShapeFactory.createShapeType(message);
+    }
+
+    public void saveToScript(Shape shape, OutputStream outputStream) throws ShapeException {
         try {
-            return ShapeFactory.createShapeType(message);
+            outputStream.write(shape.toString().getBytes());
         } catch (Exception e) {
-            //TODO: test invalid (Bad) script
-            System.err.println("Error creating shape: " + message);
+            throw new ShapeException("Error writing shape " + shape + " to script");
         }
-        return null;
     }
 
-    public void saveToScript(Shape shape, OutputStream outputStream) throws Exception {
-        outputStream.write(shape.toString().getBytes());
-        // TODO: test null shape
-    }
-
-    public void renderToImage() {
-        // TODO: finish and test
+    public void render(Shape shape, Graphics2D graphics) throws ShapeException {
+        try {
+            shape.render(graphics);
+        } catch(Exception e) {
+            throw new ShapeException("Error rendering shape");
+        }
     }
 }
