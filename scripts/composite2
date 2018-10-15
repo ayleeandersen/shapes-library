@@ -1,0 +1,4 @@
+CompositeShape,2
+Square,0,5,5
+CompositeShape,1
+Triangle,0,0,0,6,3,3

@@ -16,7 +16,7 @@ public class ShapeManagerTest {
         assertEquals(50, rectangle.getArea(), 0.001);
         assertEquals(5, rectangle.getHeight(), 0.001);
 
-        inputStream = new FileInputStream(new File("scripts/composite"));
+        inputStream = new FileInputStream(new File("scripts/composite1"));
         CompositeShape compositeShape = (CompositeShape)shapeManager.loadFromScript(inputStream);
         assertEquals(3, compositeShape.getShapes().size());
         assertEquals(50, compositeShape.getShapes().get(0).getArea(), 0.001);
