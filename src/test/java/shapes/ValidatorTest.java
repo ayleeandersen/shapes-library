@@ -78,10 +78,10 @@ public class ValidatorTest {
 
     @Test
     public void testValidatePoint() throws ShapeException {
-        Validator.validatePoint(new Point(0,-1), "Test message");
+        Validator.validateNotNull(new Point(0,-1), "Test message");
 
         try {
-            Validator.validatePoint(null,"Invalid");
+            Validator.validateNotNull(null,"Invalid");
             fail("Expected exception not thrown");
         } catch (ShapeException ex) {
             assertEquals("Invalid", ex.getMessage());

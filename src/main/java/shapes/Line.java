@@ -36,8 +36,8 @@ public class Line extends SimpleShape implements IGetVertices {
      * @throws ShapeException   Exception throw if any parameter is invalid
      */
     public Line(Point point1, Point point2) throws ShapeException {
-        Validator.validatePoint(point1, "Invalid Point");
-        Validator.validatePoint(point2, "Invalid Point");
+        Validator.validateNotNull(point1, "Invalid Point");
+        Validator.validateNotNull(point2, "Invalid Point");
 
         this.point1 = point1;
         this.point2 = point2;

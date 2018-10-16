@@ -12,8 +12,8 @@ public class Validator {
             throw new ShapeException(errorMessage);
     }
 
-    public static void validatePoint(Point point, String errorMessage) throws ShapeException {
-        if (point == null)
+    public static void validateNotNull(Object obj, String errorMessage) throws ShapeException {
+        if (obj == null)
             throw new ShapeException(errorMessage);
     }
 

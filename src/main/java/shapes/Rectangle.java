@@ -23,7 +23,7 @@ public class Rectangle extends SimpleShape implements IGetVertices {
      * @throws ShapeException The exception thrown if the topLeftVertex, height, or width are not valid.
      */
     public Rectangle(Point topLeftVertex, double height, double width) throws ShapeException {
-        Validator.validatePoint(topLeftVertex, "Must have a valid top, left vertex");
+        Validator.validateNotNull(topLeftVertex, "Must have a valid top, left vertex");
         Validator.validateLineLength(height, "Must have a positive height");
         Validator.validateLineLength(width, "Must have a positive width");
 

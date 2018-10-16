@@ -193,7 +193,7 @@ public class CircleTest {
     @Test
     public void testRender() throws Exception {
         ShapeManager shapeManager = new ShapeManager();
-        Circle circle = new Circle(10, 15, 5);
+        Circle circle = new Circle(25, 25, 10);
 
         BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
         Graphics2D graphics = bufferedImage.createGraphics();

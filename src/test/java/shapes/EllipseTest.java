@@ -173,7 +173,7 @@ public class EllipseTest {
     @Test
     public void testRender() throws Exception {
         ShapeManager shapeManager = new ShapeManager();
-        Ellipse ellipse = new Ellipse(new Point(10, 15), 5, 7);
+        Ellipse ellipse = new Ellipse(new Point(25, 25), 10, 20);
 
         BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
         Graphics2D graphics = bufferedImage.createGraphics();

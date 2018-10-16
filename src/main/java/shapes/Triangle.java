@@ -1,7 +1,6 @@
 package shapes;
 
 import java.awt.*;
-import java.awt.Shape;
 
 /**
  * This class represents Triangle objects.
@@ -24,9 +23,9 @@ public class Triangle extends SimpleShape implements IGetVertices {
      * @throws ShapeException The exception thrown if any of the points are not valid.
      */
     public Triangle(Point point1, Point point2, Point point3) throws ShapeException {
-        Validator.validatePoint(point1, "Must have valid points");
-        Validator.validatePoint(point2, "Must have valid points");
-        Validator.validatePoint(point3, "Must have valid points");
+        Validator.validateNotNull(point1, "Must have valid points");
+        Validator.validateNotNull(point2, "Must have valid points");
+        Validator.validateNotNull(point3, "Must have valid points");
 
         Line line1 = new Line(point1, point2);
         Line line2 = new Line(point2, point3);

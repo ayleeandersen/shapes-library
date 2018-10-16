@@ -23,7 +23,7 @@ public class Ellipse extends SimpleShape {
      * @throws ShapeException The exception thrown if the center, height, or width are not valid.
      */
     public Ellipse(Point center, double height, double width) throws ShapeException {
-        Validator.validatePoint(center, "Must have a valid center point");
+        Validator.validateNotNull(center, "Must have a valid center point");
         Validator.validateLineLength(height, "Must have a positive height");
         Validator.validateLineLength(width, "Must have a positive width");
 
@@ -66,7 +66,7 @@ public class Ellipse extends SimpleShape {
     }
 
     public void render(Graphics2D graphics) throws ShapeException {
-        graphics.drawOval((int)center.getX(), (int)center.getY(), (int)width, (int)height);
+        graphics.drawOval((int)(center.getX()-(getWidth()/2)), (int)(center.getY()-(int)(getHeight()/2)), (int)width, (int)height);
     }
 
     /**
