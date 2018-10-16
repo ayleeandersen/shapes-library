@@ -2,32 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c395b84f-cee6-42e5-94c0-856e506a3c7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPicture.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureFlyweightFactoryTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_000d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_001f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_002d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_003d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_004d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_005d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_006d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_007d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hw1.vpp.bak_008d" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW3.pdf" afterPath="$PROJECT_DIR$/HW3.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw1.vpp" afterPath="$PROJECT_DIR$/hw1.vpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/Ellipse.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/Ellipse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/Line.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/Line.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/Rectangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/Triangle.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/Triangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/Validator.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/Validator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shapes/CircleTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shapes/CircleTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shapes/EllipseTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shapes/EllipseTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shapes/ValidatorTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shapes/ValidatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test/renderCircleToImage.png" afterPath="$PROJECT_DIR$/scripts/test/renderCircleToImage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test/renderCompositeShapeToImage.png" afterPath="$PROJECT_DIR$/scripts/test/renderCompositeShapeToImage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test/renderEllipseToImage.png" afterPath="$PROJECT_DIR$/scripts/test/renderEllipseToImage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test/shapeManagerTestToImage.png" afterPath="$PROJECT_DIR$/scripts/test/shapeManagerTestToImage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shapes/EmbeddedPictureFlyweightFactory.class" afterPath="$PROJECT_DIR$/out/production/classes/shapes/EmbeddedPictureFlyweightFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shapes/EmbeddedPictureTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shapes/EmbeddedPictureTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/test/renderEmbeddedPictureToImage.png" afterPath="$PROJECT_DIR$/scripts/test/renderEmbeddedPictureToImage.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/Ellipse.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/Ellipse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/Line.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/Line.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/Rectangle.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/Triangle.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/Triangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shapes/CircleTest.java" afterPath="$PROJECT_DIR$/src/test/java/shapes/CircleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shapes/EllipseTest.java" afterPath="$PROJECT_DIR$/src/test/java/shapes/EllipseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shapes/ValidatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/shapes/ValidatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java" afterPath="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java" afterPath="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -40,7 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cs5700hw3$All_in_shapes_test.coverage" NAME="All in shapes_test Coverage Results" MODIFIED="1539662718698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/cs5700hw3$All_in_shapes_test.coverage" NAME="All in shapes_test Coverage Results" MODIFIED="1539711587572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -52,27 +43,8 @@
       <file leaf-file-name="EmbeddedPicture.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/shapes/EmbeddedPicture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1607#1608#0" expanded="true" />
-                <element signature="e#1639#1640#0" expanded="true" />
-                <element signature="e#1667#1668#0" expanded="true" />
-                <element signature="e#1729#1730#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmbeddedPictureFlyweightFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="343">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -492,9 +464,10 @@
         <option value="$PROJECT_DIR$/src/test/java/shapes/CircleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/shapes/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/shapes/ShapeManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPicture.java" />
         <option value="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shapes/EmbeddedPicture.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureFlyweightFactoryTest.java" />
       </list>
     </option>
   </component>
@@ -538,17 +511,6 @@
               <item name="shapes" type="b2602c69:ProjectViewProjectNode" />
               <item name="cs5700hw3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shapes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs5700hw3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shapes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs5700hw3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shapes" type="b2602c69:ProjectViewProjectNode" />
@@ -747,32 +709,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539371833432</updated>
-      <workItem from="1539371835863" duration="42230000" />
+      <workItem from="1539371835863" duration="44099000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 02m 24s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 02m 32s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 04m 16s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 06m 10s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 57m 03s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 21h 58m 09s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shapes_test - 2018.10.15 at 22h 03m 48s.xml">
-      <configuration name="All in shapes_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shapes_test - 2018.10.15 at 22h 04m 11s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
@@ -782,9 +723,30 @@
     <history-entry file="All_in_shapes_test - 2018.10.15 at 22h 05m 20s.xml">
       <configuration name="All in shapes_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.15 at 22h 14m 32s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.15 at 22h 16m 08s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.16 at 09h 05m 40s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.16 at 11h 31m 26s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.16 at 11h 33m 26s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.16 at 11h 38m 42s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shapes_test - 2018.10.16 at 11h 39m 49s.xml">
+      <configuration name="All in shapes_test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42230000" />
+    <option name="totallyTimeSpent" value="44099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1680" height="945" extended-state="6" />
@@ -943,7 +905,7 @@
         <state relative-caret-position="260">
           <caret line="70" column="65" lean-forward="false" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1064,7 +1026,7 @@
         <state relative-caret-position="230">
           <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1141,11 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/cars.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shapes/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -1170,24 +1127,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test/renderEmbeddedPictureToImage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/toystory.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2102">
-          <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shapes/ShapeFactory.java">
@@ -1198,10 +1140,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/cars.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-888">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shapes/EmbeddedPictureFlyweightFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test/renderEmbeddedPictureToImage.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shapes/EmbeddedPictureFlyweightFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        <state relative-caret-position="345">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1210,17 +1180,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shapes/EmbeddedPicture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        <state relative-caret-position="343">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
           </folding>
         </state>
       </provider>

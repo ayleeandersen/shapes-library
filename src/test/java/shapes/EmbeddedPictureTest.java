@@ -182,7 +182,7 @@ public class EmbeddedPictureTest {
         EmbeddedPicture embeddedPicture = new EmbeddedPicture(bufferedImage, "images/cars.jpg", new Point(50, 50), 25, 50);
 
         BufferedImage bufferedImage2 = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
-        Graphics2D graphics = bufferedImage.createGraphics();
+        Graphics2D graphics = bufferedImage2.createGraphics();
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, 100, 100);
         graphics.setColor(Color.BLUE);
@@ -197,7 +197,7 @@ public class EmbeddedPictureTest {
         bufferedImage = ImageIO.read(new FileInputStream(new File("images/toystory.jpeg")));
         embeddedPicture = new EmbeddedPicture(bufferedImage, "images/toystory.jpeg", new Point(500, 300), 100, 500);
         bufferedImage2 = new BufferedImage(1000, 1000, BufferedImage.TYPE_INT_RGB);
-        graphics = bufferedImage.createGraphics();
+        graphics = bufferedImage2.createGraphics();
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, 1000, 1000);
         graphics.setColor(Color.BLUE);

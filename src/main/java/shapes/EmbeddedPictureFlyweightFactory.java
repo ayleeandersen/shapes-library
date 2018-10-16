@@ -12,7 +12,6 @@ public class EmbeddedPictureFlyweightFactory {
     private static HashMap<String, BufferedImage> bufferedImages = new HashMap<>();
 
     public static EmbeddedPicture createEmbeddedPicture(String resource, Point location, double width, double height) throws Exception {
-        //TODO: TEST
         BufferedImage bufferedImage;
         if (bufferedImages.containsKey(resource)) {
             bufferedImage = bufferedImages.get(resource);
@@ -26,4 +25,6 @@ public class EmbeddedPictureFlyweightFactory {
         }
         return new EmbeddedPicture(bufferedImage, resource, location, width, height);
     }
+
+    public static HashMap<String, BufferedImage> getBufferedImages() { return bufferedImages; }
 }
