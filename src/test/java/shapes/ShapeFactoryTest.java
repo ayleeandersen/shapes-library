@@ -41,6 +41,30 @@ public class ShapeFactoryTest {
     }
 
     @Test
+    public void testCreateEmbeddedPictureShapeType() throws Exception {
+        String script = "EmbeddedPicture,images/cars.jpg,0,0,100,200";
+        EmbeddedPicture embeddedPicture = (EmbeddedPicture)ShapeFactory.createShapeType(script);
+        assertEquals(20000, embeddedPicture.getArea(), 0.001);
+        assertEquals(0, embeddedPicture.getLocation().getX(), 0.001);
+        assertEquals(100, embeddedPicture.getWidth(), 0.001);
+
+        script = "EmbeddedPicture,images/bad.png,0,0,100,200";
+        try{
+            embeddedPicture = (EmbeddedPicture)ShapeFactory.createShapeType(script);
+            fail("Should have thrown exception");
+        } catch (Exception e) {
+            assertEquals("Error parsing shape EmbeddedPicture,images/bad.png,0,0,100,200", e.getMessage());
+        }
+
+        InputStream inputStream = new FileInputStream(new File("scripts/embedded"));
+        ShapeManager shapeManager = new ShapeManager();
+        embeddedPicture = (EmbeddedPicture)shapeManager.loadFromScript(inputStream);
+        assertEquals(7500, embeddedPicture.getArea(), 0.001);
+        assertEquals(400, embeddedPicture.getLocation().getX(), 0.001);
+        assertEquals(75, embeddedPicture.getHeight(), 0.001);
+    }
+
+    @Test
     public void testCreatePointShapeType() throws Exception {
         String script = "Point,0.43,-5.6";
         Point point = (Point)ShapeFactory.createShapeType(script);

@@ -28,6 +28,9 @@ public class ShapeFactory {
                         compositeShape = CompositeShape.class.getConstructor();
                         return compositeShape.newInstance();
                     }
+                case "EmbeddedPicture":
+                    return EmbeddedPictureFlyweightFactory.createEmbeddedPicture(messageList.get(1), new Point(Double.parseDouble(messageList.get(2)), Double.parseDouble(messageList.get(3))),
+                            Double.parseDouble(messageList.get(4)), Double.parseDouble(messageList.get(5)));
                 case "Point":
                     Constructor<Point> point = Point.class.getConstructor(double.class, double.class);
                     return point.newInstance(Double.parseDouble(messageList.get(1)), Double.parseDouble(messageList.get(2)));

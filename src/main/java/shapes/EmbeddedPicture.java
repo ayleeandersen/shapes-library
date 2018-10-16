@@ -54,7 +54,6 @@ public class EmbeddedPicture extends Shape {
     }
 
     public String toString() {
-        // TODO: add to ShapeFactory and test in both regular shape and composite shape
         return "EmbeddedPicture," + resource + "," + location.getX() + "," + location.getY() + "," + width + "," + height;
     }
 }

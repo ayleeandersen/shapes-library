@@ -171,6 +171,7 @@ public class CompositeShapeTest {
     public void testRender() throws Exception {
         ShapeManager shapeManager = new ShapeManager();
         ArrayList<Shape> shapes = new ArrayList<Shape>();
+        shapes.add(EmbeddedPictureFlyweightFactory.createEmbeddedPicture("images/toystory.jpeg", new Point(830, 100), 100, 100));
         shapes.add(new Rectangle(new Point(30,20),10,20));
         shapes.add(new Circle(new Point(75, 75), 10));
         shapes.add(new Triangle(new Point(10,10), new Point(65, 20), new Point(30, 65)));
@@ -187,7 +188,7 @@ public class CompositeShapeTest {
         // Write observed results to a file so it can be manually compared
         Assert.assertTrue(ImageIO.write(bufferedImage, "png", new File("scripts/test/renderCompositeShapeToImage.png")));
         // To check predicted results against observed results, view renderCompositeShapeToImage.png in scripts/test
-        // and see if it contains a Rectangle, a Triangle, and  circle.
+        // and see if it contains a Rectangle, a Triangle, and  circle on top of Woody's face.
     }
 
     @Test

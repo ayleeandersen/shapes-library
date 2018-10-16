@@ -42,14 +42,30 @@ public class EmbeddedPictureFlyweightFactoryTest {
 
     @Test
     public void testGetBufferedImages() throws Exception {
-        assertEquals(0, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        int size = EmbeddedPictureFlyweightFactory.getBufferedImages().size();
+        assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+
+        String image = EmbeddedPictureFlyweightFactory.getBufferedImages().containsKey("images/cars.jpg") ? "cars" : "toystory";
+
         EmbeddedPictureFlyweightFactory.createEmbeddedPicture("images/cars.jpg", new Point(0,0), 200,200);
-        assertEquals(1, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        if (image.equals("cars")) {
+            assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        } else {
+            size++;
+            assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        }
         assertTrue(EmbeddedPictureFlyweightFactory.getBufferedImages().containsKey("images/cars.jpg"));
+
         EmbeddedPictureFlyweightFactory.createEmbeddedPicture("images/cars.jpg", new Point(50,50), 100, 50);
-        assertEquals(1, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+
         EmbeddedPictureFlyweightFactory.createEmbeddedPicture("images/toystory.jpeg", new Point(100,100), 50, 200);
-        assertEquals(2, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        if (image.equals("toystory")) {
+            assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        } else {
+            size++;
+            assertEquals(size, EmbeddedPictureFlyweightFactory.getBufferedImages().size());
+        }
         assertTrue(EmbeddedPictureFlyweightFactory.getBufferedImages().containsKey("images/toystory.jpeg"));
     }
 }
