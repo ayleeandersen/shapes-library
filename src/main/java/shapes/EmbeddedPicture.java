@@ -41,8 +41,8 @@ public class EmbeddedPicture extends Shape {
         }
     }
 
-    public Point getLocation() {
-        return location;
+    public Point getLocation() throws ShapeException {
+        return location.duplicate();
     }
 
     public double getWidth() {
